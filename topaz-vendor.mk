@@ -8,13 +8,11 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/topaz/proprietary/etc/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
     vendor/xiaomi/topaz/proprietary/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
-    vendor/xiaomi/topaz/proprietary/odm/bin/mlipayd@1.1:$(TARGET_COPY_OUT_ODM)/bin/mlipayd@1.1 \
     vendor/xiaomi/topaz/proprietary/odm/etc/audio_policy_engine_configuration.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_policy_engine_configuration.xml \
     vendor/xiaomi/topaz/proprietary/odm/etc/audio_policy_engine_default_stream_volumes.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_policy_engine_default_stream_volumes.xml \
     vendor/xiaomi/topaz/proprietary/odm/etc/audio_policy_engine_product_strategies.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_policy_engine_product_strategies.xml \
     vendor/xiaomi/topaz/proprietary/odm/etc/audio_policy_engine_stream_volumes.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_policy_engine_stream_volumes.xml \
     vendor/xiaomi/topaz/proprietary/odm/etc/camera/camerabooster.json:$(TARGET_COPY_OUT_ODM)/etc/camera/camerabooster.json \
-    vendor/xiaomi/topaz/proprietary/odm/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc \
     vendor/xiaomi/topaz/proprietary/odm/etc/permissions/sku_m7n/android.hardware.nfc.hce.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_m7n/android.hardware.nfc.hce.xml \
     vendor/xiaomi/topaz/proprietary/odm/etc/permissions/sku_m7n/android.hardware.nfc.hcef.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_m7n/android.hardware.nfc.hcef.xml \
     vendor/xiaomi/topaz/proprietary/odm/etc/permissions/sku_m7n/android.hardware.nfc.uicc.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_m7n/android.hardware.nfc.uicc.xml \
@@ -28,18 +26,13 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/topaz/proprietary/vendor/firmware/goodix_cfg_group.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix_cfg_group.bin \
     vendor/xiaomi/topaz/proprietary/vendor/firmware/goodix_firmware.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix_firmware.bin \
     vendor/xiaomi/topaz/proprietary/vendor/firmware/gtx8_limits_M395.csv:$(TARGET_COPY_OUT_VENDOR)/firmware/gtx8_limits_M395.csv \
-    vendor/xiaomi/topaz/proprietary/odm/lib64/libmlipay.so:$(TARGET_COPY_OUT_ODM)/lib64/libmlipay.so \
-    vendor/xiaomi/topaz/proprietary/odm/lib64/libmlipay@1.1.so:$(TARGET_COPY_OUT_ODM)/lib64/libmlipay@1.1.so \
-    vendor/xiaomi/topaz/proprietary/odm/lib64/libteeclientjni.so:$(TARGET_COPY_OUT_ODM)/lib64/libteeclientjni.so \
-    vendor/xiaomi/topaz/proprietary/odm/lib64/libwvkeybox.so:$(TARGET_COPY_OUT_ODM)/lib64/libwvkeybox.so \
-    vendor/xiaomi/topaz/proprietary/odm/lib64/vendor.xiaomi.hardware.mlipay@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.xiaomi.hardware.mlipay@1.0.so \
-    vendor/xiaomi/topaz/proprietary/odm/lib64/vendor.xiaomi.hardware.mlipay@1.1.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.xiaomi.hardware.mlipay@1.1.so \
-    vendor/xiaomi/topaz/proprietary/odm/lib64/vendor.xiaomi.hardware.mtdservice@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.xiaomi.hardware.mtdservice@1.0.so \
     vendor/xiaomi/topaz/proprietary/vendor/etc/displayconfig/display_id_4630946444529356673.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946444529356673.xml \
     vendor/xiaomi/topaz/proprietary/vendor/etc/displayconfig/display_id_4630946914797301377.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946914797301377.xml \
     vendor/xiaomi/topaz/proprietary/product/etc/permissions/UimGba.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimGba.xml \
     vendor/xiaomi/topaz/proprietary/product/etc/permissions/UimGbaManager.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimGbaManager.xml \
     vendor/xiaomi/topaz/proprietary/product/etc/permissions/UimService.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimService.xml \
+    vendor/xiaomi/topaz/proprietary/system/lib64/vendor.qti.diaghal-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.qti.diaghal-V1-ndk.so \
+    vendor/xiaomi/topaz/proprietary/system/lib64/vendor.qti.hardware.fm-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.qti.hardware.fm-V1-ndk.so \
     vendor/xiaomi/topaz/proprietary/system_ext/bin/dpmd:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/dpmd \
     vendor/xiaomi/topaz/proprietary/system_ext/bin/qccsyshal@1.2-service:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/qccsyshal@1.2-service \
     vendor/xiaomi/topaz/proprietary/system_ext/etc/bluetooth/leaudio_configs.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/bluetooth/leaudio_configs.xml \
@@ -88,12 +81,19 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/topaz/proprietary/system_ext/lib64/vendor.qti.hardware.qccsyshal@1.2-halimpl.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.qccsyshal@1.2-halimpl.so \
     vendor/xiaomi/topaz/proprietary/system_ext/lib64/vendor.qti.hardware.qccsyshal@1.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.qccsyshal@1.2.so \
     vendor/xiaomi/topaz/proprietary/system_ext/lib64/vendor.qti.hardware.qccvndhal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.qccvndhal@1.0.so \
+    vendor/xiaomi/topaz/proprietary/system_ext/lib64/vendor.qti.ims.callcapabilityaidlservice-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.callcapabilityaidlservice-V1-ndk.so \
+    vendor/xiaomi/topaz/proprietary/system_ext/lib64/vendor.qti.ims.configaidlservice-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.configaidlservice-V1-ndk.so \
+    vendor/xiaomi/topaz/proprietary/system_ext/lib64/vendor.qti.ims.connectionaidlservice-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.connectionaidlservice-V1-ndk.so \
+    vendor/xiaomi/topaz/proprietary/system_ext/lib64/vendor.qti.ims.factoryaidlservice-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.factoryaidlservice-V1-ndk.so \
+    vendor/xiaomi/topaz/proprietary/system_ext/lib64/vendor.qti.ims.rcssipaidlservice-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.rcssipaidlservice-V1-ndk.so \
+    vendor/xiaomi/topaz/proprietary/system_ext/lib64/vendor.qti.ims.rcsuceaidlservice-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.rcsuceaidlservice-V1-ndk.so \
     vendor/xiaomi/topaz/proprietary/system_ext/lib64/vendor.qti.imsrtpservice@3.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.imsrtpservice@3.0.so \
     vendor/xiaomi/topaz/proprietary/system_ext/lib64/vendor.qti.imsrtpservice@3.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.imsrtpservice@3.1.so \
+    vendor/xiaomi/topaz/proprietary/system_ext/lib64/vendor.qti.qccsyshal_aidl-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.qccsyshal_aidl-V1-ndk.so \
+    vendor/xiaomi/topaz/proprietary/system_ext/lib64/vendor.qti.qccsyshal_aidl-halimpl.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.qccsyshal_aidl-halimpl.so \
     vendor/xiaomi/topaz/proprietary/system_ext/lib64/vendor.qti.qccvndhal_aidl-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.qccvndhal_aidl-V1-ndk.so \
     vendor/xiaomi/topaz/proprietary/vendor/bin/ATFWD-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ATFWD-daemon \
     vendor/xiaomi/topaz/proprietary/vendor/bin/STFlashTool:$(TARGET_COPY_OUT_VENDOR)/bin/STFlashTool \
-    vendor/xiaomi/topaz/proprietary/vendor/bin/SoterProvisioningTool:$(TARGET_COPY_OUT_VENDOR)/bin/SoterProvisioningTool \
     vendor/xiaomi/topaz/proprietary/vendor/bin/adpl:$(TARGET_COPY_OUT_VENDOR)/bin/adpl \
     vendor/xiaomi/topaz/proprietary/vendor/bin/adsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/adsprpcd \
     vendor/xiaomi/topaz/proprietary/vendor/bin/agmcap:$(TARGET_COPY_OUT_VENDOR)/bin/agmcap \
@@ -115,8 +115,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/topaz/proprietary/vendor/bin/edgnss-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/edgnss-daemon \
     vendor/xiaomi/topaz/proprietary/vendor/bin/embmsslServer:$(TARGET_COPY_OUT_VENDOR)/bin/embmsslServer \
     vendor/xiaomi/topaz/proprietary/vendor/bin/engine-service:$(TARGET_COPY_OUT_VENDOR)/bin/engine-service \
-    vendor/xiaomi/topaz/proprietary/vendor/bin/hdcp1prov:$(TARGET_COPY_OUT_VENDOR)/bin/hdcp1prov \
-    vendor/xiaomi/topaz/proprietary/vendor/bin/hdcp2p2prov:$(TARGET_COPY_OUT_VENDOR)/bin/hdcp2p2prov \
     vendor/xiaomi/topaz/proprietary/vendor/bin/hvdcp_opti:$(TARGET_COPY_OUT_VENDOR)/bin/hvdcp_opti \
     vendor/xiaomi/topaz/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service_lc:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint@2.1-service_lc \
     vendor/xiaomi/topaz/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@1.0-service-qti \
@@ -132,22 +130,13 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/topaz/proprietary/vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.alarm@1.0-service \
     vendor/xiaomi/topaz/proprietary/vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service \
     vendor/xiaomi/topaz/proprietary/vendor/bin/hw/vendor.qti.hardware.display.composer-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.display.composer-service \
-    vendor/xiaomi/topaz/proprietary/vendor/bin/hw/vendor.qti.hardware.iop@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.iop@2.0-service \
-    vendor/xiaomi/topaz/proprietary/vendor/bin/hw/vendor.qti.hardware.lights.service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.lights.service \
-    vendor/xiaomi/topaz/proprietary/vendor/bin/hw/vendor.qti.hardware.limits@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.limits@1.2-service \
     vendor/xiaomi/topaz/proprietary/vendor/bin/hw/vendor.qti.hardware.perf-hal-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.perf-hal-service \
     vendor/xiaomi/topaz/proprietary/vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.qseecom@1.0-service \
     vendor/xiaomi/topaz/proprietary/vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service \
     vendor/xiaomi/topaz/proprietary/vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service \
-    vendor/xiaomi/topaz/proprietary/vendor/bin/hw/vendor.qti.hardware.servicetracker@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.servicetracker@1.2-service \
-    vendor/xiaomi/topaz/proprietary/vendor/bin/hw/vendor.qti.hardware.soter@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.soter@1.0-service \
-    vendor/xiaomi/topaz/proprietary/vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti \
     vendor/xiaomi/topaz/proprietary/vendor/bin/hw/vendor.qti.media.c2@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.media.c2@1.0-service \
     vendor/xiaomi/topaz/proprietary/vendor/bin/hw/vendor.qti.media.c2audio@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.media.c2audio@1.0-service \
-    vendor/xiaomi/topaz/proprietary/vendor/bin/hw/vendor.qti.memory.pasrmanager@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.memory.pasrmanager@1.0-service \
-    vendor/xiaomi/topaz/proprietary/vendor/bin/hw/vendor.qti.psiclient@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.psiclient@1.0-service \
     vendor/xiaomi/topaz/proprietary/vendor/bin/hw/vendor.xiaomi.hardware.displayfeature@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.xiaomi.hardware.displayfeature@1.0-service \
-    vendor/xiaomi/topaz/proprietary/vendor/bin/hw/vendor.xiaomi.hardware.micharge@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.xiaomi.hardware.micharge@1.0-service \
     vendor/xiaomi/topaz/proprietary/vendor/bin/ims_rtp_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ims_rtp_daemon \
     vendor/xiaomi/topaz/proprietary/vendor/bin/imsdaemon:$(TARGET_COPY_OUT_VENDOR)/bin/imsdaemon \
     vendor/xiaomi/topaz/proprietary/vendor/bin/init.qcom.sensors.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qcom.sensors.sh \
@@ -176,7 +165,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/topaz/proprietary/vendor/bin/qdcmss:$(TARGET_COPY_OUT_VENDOR)/bin/qdcmss \
     vendor/xiaomi/topaz/proprietary/vendor/bin/qmipriod:$(TARGET_COPY_OUT_VENDOR)/bin/qmipriod \
     vendor/xiaomi/topaz/proprietary/vendor/bin/qms:$(TARGET_COPY_OUT_VENDOR)/bin/qms \
-    vendor/xiaomi/topaz/proprietary/vendor/bin/qsap_qapeservice:$(TARGET_COPY_OUT_VENDOR)/bin/qsap_qapeservice \
     vendor/xiaomi/topaz/proprietary/vendor/bin/qseecomd:$(TARGET_COPY_OUT_VENDOR)/bin/qseecomd \
     vendor/xiaomi/topaz/proprietary/vendor/bin/rmt_storage:$(TARGET_COPY_OUT_VENDOR)/bin/rmt_storage \
     vendor/xiaomi/topaz/proprietary/vendor/bin/sensors.qti:$(TARGET_COPY_OUT_VENDOR)/bin/sensors.qti \
@@ -188,7 +176,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/topaz/proprietary/vendor/bin/thermal-engine-v2:$(TARGET_COPY_OUT_VENDOR)/bin/thermal-engine-v2 \
     vendor/xiaomi/topaz/proprietary/vendor/bin/time_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/time_daemon \
     vendor/xiaomi/topaz/proprietary/vendor/bin/vendor.dpmd:$(TARGET_COPY_OUT_VENDOR)/bin/vendor.dpmd \
-    vendor/xiaomi/topaz/proprietary/vendor/bin/vendor.qti.hardware.soter@1.0-provision:$(TARGET_COPY_OUT_VENDOR)/bin/vendor.qti.hardware.soter@1.0-provision \
     vendor/xiaomi/topaz/proprietary/vendor/bin/vendor.qti.qspmhal@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/vendor.qti.qspmhal@1.0-service \
     vendor/xiaomi/topaz/proprietary/vendor/bin/xtra-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/xtra-daemon \
     vendor/xiaomi/topaz/proprietary/vendor/bin/xtwifi-client:$(TARGET_COPY_OUT_VENDOR)/bin/xtwifi-client \
@@ -363,7 +350,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/topaz/proprietary/vendor/etc/init/shsusrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/shsusrd.rc \
     vendor/xiaomi/topaz/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
     vendor/xiaomi/topaz/proprietary/vendor/etc/init/vendor.dpmd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dpmd.rc \
-    vendor/xiaomi/topaz/proprietary/vendor/etc/init/vendor.qsap.qapeservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qsap.qapeservice.rc \
     vendor/xiaomi/topaz/proprietary/vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-guestos-service.rc \
     vendor/xiaomi/topaz/proprietary/vendor/etc/init/vendor.qti.audio-adsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.audio-adsprpc-service.rc \
     vendor/xiaomi/topaz/proprietary/vendor/etc/init/vendor.qti.battery_stats.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.battery_stats.rc \
@@ -374,43 +360,21 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/topaz/proprietary/vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc \
     vendor/xiaomi/topaz/proprietary/vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc \
     vendor/xiaomi/topaz/proprietary/vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.dsp@1.0-service.rc \
-    vendor/xiaomi/topaz/proprietary/vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.iop@2.0-service.rc \
-    vendor/xiaomi/topaz/proprietary/vendor/etc/init/vendor.qti.hardware.lights.service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.lights.service.rc \
-    vendor/xiaomi/topaz/proprietary/vendor/etc/init/vendor.qti.hardware.limits-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.limits-service.rc \
     vendor/xiaomi/topaz/proprietary/vendor/etc/init/vendor.qti.hardware.perf-hal-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.perf-hal-service.rc \
     vendor/xiaomi/topaz/proprietary/vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc \
     vendor/xiaomi/topaz/proprietary/vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc \
     vendor/xiaomi/topaz/proprietary/vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc \
-    vendor/xiaomi/topaz/proprietary/vendor/etc/init/vendor.qti.hardware.servicetracker@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.servicetracker@1.2-service.rc \
-    vendor/xiaomi/topaz/proprietary/vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.soter@1.0-service.rc \
-    vendor/xiaomi/topaz/proprietary/vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc \
     vendor/xiaomi/topaz/proprietary/vendor/etc/init/vendor.qti.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2@1.0-service.rc \
     vendor/xiaomi/topaz/proprietary/vendor/etc/init/vendor.qti.media.c2audio@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2audio@1.0-service.rc \
-    vendor/xiaomi/topaz/proprietary/vendor/etc/init/vendor.qti.memory.pasrmanager@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.memory.pasrmanager@1.0-service.rc \
-    vendor/xiaomi/topaz/proprietary/vendor/etc/init/vendor.qti.psiclient@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.psiclient@1.0-service.rc \
     vendor/xiaomi/topaz/proprietary/vendor/etc/init/vendor.qti.qspmhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.qspmhal@1.0-service.rc \
     vendor/xiaomi/topaz/proprietary/vendor/etc/init/vendor.qti.rmt_storage_qmaa.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.rmt_storage_qmaa.rc \
     vendor/xiaomi/topaz/proprietary/vendor/etc/init/vendor.qti.tftp_qmaa.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp_qmaa.rc \
     vendor/xiaomi/topaz/proprietary/vendor/etc/init/vendor.sensors.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.qti.rc \
     vendor/xiaomi/topaz/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
     vendor/xiaomi/topaz/proprietary/vendor/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc \
-    vendor/xiaomi/topaz/proprietary/vendor/etc/init/vendor.xiaomi.hardware.micharge@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.micharge@1.0-service.rc \
     vendor/xiaomi/topaz/proprietary/vendor/etc/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
     vendor/xiaomi/topaz/proprietary/vendor/etc/libnfc-hal-st.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-hal-st.conf \
     vendor/xiaomi/topaz/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
-    vendor/xiaomi/topaz/proprietary/vendor/etc/lm/AdaptLaunchFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/AdaptLaunchFeature.xml \
-    vendor/xiaomi/topaz/proprietary/vendor/etc/lm/AppClassifierFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/AppClassifierFeature.xml \
-    vendor/xiaomi/topaz/proprietary/vendor/etc/lm/LightningLaunchesFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/LightningLaunchesFeature.xml \
-    vendor/xiaomi/topaz/proprietary/vendor/etc/lm/PreKillFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/PreKillFeature.xml \
-    vendor/xiaomi/topaz/proprietary/vendor/etc/lm/PrefAppsFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/PrefAppsFeature.xml \
-    vendor/xiaomi/topaz/proprietary/vendor/etc/lm/ProCompFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/ProCompFeature.xml \
-    vendor/xiaomi/topaz/proprietary/vendor/etc/lm/QAPE.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/QAPE.xml \
-    vendor/xiaomi/topaz/proprietary/vendor/etc/lm/QGPE.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/QGPE.xml \
-    vendor/xiaomi/topaz/proprietary/vendor/etc/lm/QGPEActionMap.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/QGPEActionMap.xml \
-    vendor/xiaomi/topaz/proprietary/vendor/etc/lm/SilkyScrollsFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/SilkyScrollsFeature.xml \
-    vendor/xiaomi/topaz/proprietary/vendor/etc/lm/prekill/prekill_2GB.data:$(TARGET_COPY_OUT_VENDOR)/etc/lm/prekill/prekill_2GB.data \
-    vendor/xiaomi/topaz/proprietary/vendor/etc/lm/prekill/prekill_4GB.data:$(TARGET_COPY_OUT_VENDOR)/etc/lm/prekill/prekill_4GB.data \
-    vendor/xiaomi/topaz/proprietary/vendor/etc/lm/prekill/prekill_6GB.data:$(TARGET_COPY_OUT_VENDOR)/etc/lm/prekill/prekill_6GB.data \
     vendor/xiaomi/topaz/proprietary/vendor/etc/lowi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.conf \
     vendor/xiaomi/topaz/proprietary/vendor/etc/mdss_dsi_panel_m7_38_0c_0a_fhdp_video_mi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mdss_dsi_panel_m7_38_0c_0a_fhdp_video_mi.xml \
     vendor/xiaomi/topaz/proprietary/vendor/etc/mdss_dsi_panel_m7_38_0c_0b_fhdp_video_mi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mdss_dsi_panel_m7_38_0c_0b_fhdp_video_mi.xml \
@@ -455,9 +419,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/topaz/proprietary/vendor/etc/sdr_config.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/sdr_config.cfg \
     vendor/xiaomi/topaz/proprietary/vendor/etc/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config \
     vendor/xiaomi/topaz/proprietary/vendor/etc/seccomp_policy/atfwd@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/atfwd@2.0.policy \
-    vendor/xiaomi/topaz/proprietary/vendor/etc/seccomp_policy/c2audio.vendor.base-arm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/c2audio.vendor.base-arm.policy \
     vendor/xiaomi/topaz/proprietary/vendor/etc/seccomp_policy/c2audio.vendor.base-arm64.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/c2audio.vendor.base-arm64.policy \
-    vendor/xiaomi/topaz/proprietary/vendor/etc/seccomp_policy/c2audio.vendor.ext-arm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/c2audio.vendor.ext-arm.policy \
     vendor/xiaomi/topaz/proprietary/vendor/etc/seccomp_policy/c2audio.vendor.ext-arm64.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/c2audio.vendor.ext-arm64.policy \
     vendor/xiaomi/topaz/proprietary/vendor/etc/seccomp_policy/codec2.vendor.base-arm64.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.base-arm64.policy \
     vendor/xiaomi/topaz/proprietary/vendor/etc/seccomp_policy/codec2.vendor.ext-arm64.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.ext-arm64.policy \
@@ -468,7 +430,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/topaz/proprietary/vendor/etc/seccomp_policy/imsrtp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/imsrtp.policy \
     vendor/xiaomi/topaz/proprietary/vendor/etc/seccomp_policy/qcrilnr@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qcrilnr@2.0.policy \
     vendor/xiaomi/topaz/proprietary/vendor/etc/seccomp_policy/qms.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qms.policy \
-    vendor/xiaomi/topaz/proprietary/vendor/etc/seccomp_policy/qsap_qapeservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qsap_qapeservice.policy \
     vendor/xiaomi/topaz/proprietary/vendor/etc/seccomp_policy/qspm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qspm.policy \
     vendor/xiaomi/topaz/proprietary/vendor/etc/seccomp_policy/qti-systemd.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qti-systemd.policy \
     vendor/xiaomi/topaz/proprietary/vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/vendor.qti.hardware.dsp.policy \
@@ -498,13 +459,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/topaz/proprietary/vendor/etc/sensors/config/dynamic_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/dynamic_sensors.json \
     vendor/xiaomi/topaz/proprietary/vendor/etc/sensors/config/holi_tmd2755_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/holi_tmd2755_0.json \
     vendor/xiaomi/topaz/proprietary/vendor/etc/sensors/config/icm4x6x.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/icm4x6x.json \
-    vendor/xiaomi/topaz/proprietary/vendor/etc/sensors/config/kona_qmc630x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_qmc630x_0.json \
-    vendor/xiaomi/topaz/proprietary/vendor/etc/sensors/config/kona_qmc630x_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_qmc630x_1.json \
-    vendor/xiaomi/topaz/proprietary/vendor/etc/sensors/config/lahaina_mmc56x3x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_mmc56x3x_0.json \
-    vendor/xiaomi/topaz/proprietary/vendor/etc/sensors/config/lahaina_mmc56x3x_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lahaina_mmc56x3x_1.json \
-    vendor/xiaomi/topaz/proprietary/vendor/etc/sensors/config/msmnile_bmi3x0_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/msmnile_bmi3x0_0.json \
-    vendor/xiaomi/topaz/proprietary/vendor/etc/sensors/config/msmnile_icm4x6x.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/msmnile_icm4x6x.json \
-    vendor/xiaomi/topaz/proprietary/vendor/etc/sensors/config/sdm845_sx932x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sdm845_sx932x_0.json \
     vendor/xiaomi/topaz/proprietary/vendor/etc/sensors/config/sns_amd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd.json \
     vendor/xiaomi/topaz/proprietary/vendor/etc/sensors/config/sns_amd_sw_disabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd_sw_disabled.json \
     vendor/xiaomi/topaz/proprietary/vendor/etc/sensors/config/sns_amd_sw_enabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd_sw_enabled.json \
@@ -618,10 +572,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/topaz/proprietary/vendor/gpu/kbc/unified_kbcs_32.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_32.bin \
     vendor/xiaomi/topaz/proprietary/vendor/gpu/kbc/unified_kbcs_64.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_64.bin \
     vendor/xiaomi/topaz/proprietary/vendor/gpu/kbc/unified_ksqs.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_ksqs.bin \
-    vendor/xiaomi/topaz/proprietary/vendor/lib/libAlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libAlacSwDec.so \
-    vendor/xiaomi/topaz/proprietary/vendor/lib/libApeSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libApeSwDec.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib/libEvrcSwCodec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libEvrcSwCodec.so \
-    vendor/xiaomi/topaz/proprietary/vendor/lib/libFlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libFlacSwDec.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib/libQcelp13SwCodec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libQcelp13SwCodec.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib/libadsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadsp_default_listener.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib/libadsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadsprpc.so \
@@ -645,6 +596,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/topaz/proprietary/vendor/lib/rfsa/adsp/misound_res_spk.bin:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/misound_res_spk.bin \
     vendor/xiaomi/topaz/proprietary/vendor/lib/soundfx/libasphere.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libasphere.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib/soundfx/libshoebox.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libshoebox.so \
+    vendor/xiaomi/topaz/proprietary/vendor/lib/vendor.qti.qspmhal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.qspmhal@1.0.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/android.hardware.biometrics.common-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.biometrics.common-V2-ndk.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/android.hardware.biometrics.fingerprint-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.biometrics.fingerprint-V2-ndk.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/android.hardware.biometrics.fingerprint@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.biometrics.fingerprint@2.1.so \
@@ -834,11 +786,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so \
-    vendor/xiaomi/topaz/proprietary/vendor/lib64/hw/vendor.qti.hardware.servicetracker@1.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.servicetracker@1.2-impl.so \
-    vendor/xiaomi/topaz/proprietary/vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so \
-    vendor/xiaomi/topaz/proprietary/vendor/lib64/hw/vendor.qti.memory.pasrmanager@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.memory.pasrmanager@1.0-impl.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so \
-    vendor/xiaomi/topaz/proprietary/vendor/lib64/hw/vendor.xiaomi.hardware.micharge@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.xiaomi.hardware.micharge@1.0-impl.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/hw/vulkan.adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vulkan.adreno.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/lib-imscommon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imscommon.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/lib-imsdpl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsdpl.so \
@@ -850,11 +798,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/lib-rtpcommon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-rtpcommon.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/lib-rtpcore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-rtpcore.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/lib-rtpsl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-rtpsl.so \
-    vendor/xiaomi/topaz/proprietary/vendor/lib64/libAlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libAlacSwDec.so \
-    vendor/xiaomi/topaz/proprietary/vendor/lib64/libApeSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libApeSwDec.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libCB.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCB.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libEvrcSwCodec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libEvrcSwCodec.so \
-    vendor/xiaomi/topaz/proprietary/vendor/lib64/libFlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFlacSwDec.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libGPMTEEC_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPMTEEC_vendor.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libGPQTEEC_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPQTEEC_vendor.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libGPTEE_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPTEE_vendor.so \
@@ -867,7 +812,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libQcelp13SwCodec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQcelp13SwCodec.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libQtiRilLoadable.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQtiRilLoadable.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libSNPE.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSNPE.so \
-    vendor/xiaomi/topaz/proprietary/vendor/lib64/libSecureUILib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSecureUILib.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libSnpeHtpPrepare.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSnpeHtpPrepare.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libSnpeHtpV68Stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSnpeHtpV68Stub.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libSnpeHtpV69Stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSnpeHtpV69Stub.so \
@@ -875,7 +819,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/lib_bt_aptx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_bt_aptx.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/lib_bt_ble.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_bt_ble.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/lib_bt_bundle.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_bt_bundle.so \
-    vendor/xiaomi/topaz/proprietary/vendor/lib64/libadaptlaunch.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadaptlaunch.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libadm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadm.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libadreno_app_profiles.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadreno_app_profiles.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libadreno_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadreno_utils.so \
@@ -890,8 +833,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libalLDC.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalLDC.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libalhLDC.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalhLDC.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libalsautils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalsautils.so \
-    vendor/xiaomi/topaz/proprietary/vendor/lib64/libapengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libapengine.so \
-    vendor/xiaomi/topaz/proprietary/vendor/lib64/libappclassifier.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libappclassifier.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libar-acdb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libar-acdb.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libar-gpr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libar-gpr.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libarcsoft_beautyshot.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_beautyshot.so \
@@ -909,7 +850,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libbitmlengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbitmlengine.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libbluetooth_audio_session_qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_audio_session_qti.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libbluetooth_audio_session_qti_2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_audio_session_qti_2_1.so \
-    vendor/xiaomi/topaz/proprietary/vendor/lib64/libbt-hidlclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbt-hidlclient.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libbtnv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbtnv.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libc++_shared.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc++_shared.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libc++_shared_vf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc++_shared_vf.so \
@@ -965,8 +905,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libdsd2pcm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdsd2pcm.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libdsi_netctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdsi_netctrl.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libdsutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdsutils.so \
-    vendor/xiaomi/topaz/proprietary/vendor/lib64/libeai_fixed.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libeai_fixed.so \
-    vendor/xiaomi/topaz/proprietary/vendor/lib64/libeai_float.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libeai_float.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libembmsservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libembmsservice.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libengineplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libengineplugin.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libesepmconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libesepmconfig.so \
@@ -984,9 +922,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libgpt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgpt.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libgpudataproducer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgpudataproducer.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libgsl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgsl.so \
-    vendor/xiaomi/topaz/proprietary/vendor/lib64/libhdcp1prov.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdcp1prov.so \
-    vendor/xiaomi/topaz/proprietary/vendor/lib64/libhdcp2p2prov.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdcp2p2prov.so \
-    vendor/xiaomi/topaz/proprietary/vendor/lib64/libhdcpsrm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdcpsrm.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libhdr_tm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdr_tm.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libhfp_pal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhfp_pal.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libhistogram.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhistogram.so \
@@ -1004,15 +939,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libkeymasterprovision.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymasterprovision.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libkeymasterutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymasterutils.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/liblbs_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblbs_core.so \
-    vendor/xiaomi/topaz/proprietary/vendor/lib64/liblearningmodule.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblearningmodule.so \
-    vendor/xiaomi/topaz/proprietary/vendor/lib64/liblightninglaunches.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblightninglaunches.so \
-    vendor/xiaomi/topaz/proprietary/vendor/lib64/liblistensoundmodel2vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblistensoundmodel2vendor.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libllvm-glnext.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libllvm-glnext.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libllvm-qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libllvm-qcom.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libllvm-qgl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libllvm-qgl.so \
-    vendor/xiaomi/topaz/proprietary/vendor/lib64/liblmutils-ns.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblmutils-ns.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libloadalgo_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloadalgo_stub.so \
-    vendor/xiaomi/topaz/proprietary/vendor/lib64/libloadtrusteduiapp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloadtrusteduiapp.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libloc_api_v02.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_api_v02.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libloc_api_wds.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_api_wds.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libloc_base_util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_base_util.so \
@@ -1042,10 +972,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libmdmdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmdmdetect.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libmdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmdsprpc.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libmediautils_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmediautils_vendor.so \
-    vendor/xiaomi/topaz/proprietary/vendor/lib64/libmemperfd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmemperfd.so \
-    vendor/xiaomi/topaz/proprietary/vendor/lib64/libmemunreachable.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmemunreachable.so \
-    vendor/xiaomi/topaz/proprietary/vendor/lib64/libmeters-ns.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmeters-ns.so \
-    vendor/xiaomi/topaz/proprietary/vendor/lib64/libmeters.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmeters.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libmialgo_ai_vision.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmialgo_ai_vision.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libmialgo_aio_seg.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmialgo_aio_seg.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libmialgo_basic_cdsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmialgo_basic_cdsp_skel.so \
@@ -1058,7 +984,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libminksocket_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libminksocket_vendor.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libmiphone_capture_bokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmiphone_capture_bokeh.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libmiphone_preview_bokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmiphone_preview_bokeh.so \
-    vendor/xiaomi/topaz/proprietary/vendor/lib64/libmm-hdcpmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmm-hdcpmgr.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libmmcamera_cac3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_cac3.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libmmcamera_lscv35.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_lscv35.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libmmcamera_mfnr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_mfnr.so \
@@ -1093,7 +1018,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libos.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libos.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libpal_net_if.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpal_net_if.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libpalclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpalclient.so \
-    vendor/xiaomi/topaz/proprietary/vendor/lib64/libpasrutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpasrutils.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libpcap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpcap.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libpdmapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpdmapper.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libpdnotifier.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpdnotifier.so \
@@ -1101,10 +1025,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libperfgluelayer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperfgluelayer.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libperfioctl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperfioctl.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libperipheral_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperipheral_client.so \
-    vendor/xiaomi/topaz/proprietary/vendor/lib64/libprefapps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprefapps.so \
-    vendor/xiaomi/topaz/proprietary/vendor/lib64/libprekill.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprekill.so \
-    vendor/xiaomi/topaz/proprietary/vendor/lib64/libprocomp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprocomp.so \
-    vendor/xiaomi/topaz/proprietary/vendor/lib64/libqapesdk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqapesdk.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libqc2audio_base.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqc2audio_base.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libqc2audio_basecodec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqc2audio_basecodec.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libqc2audio_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqc2audio_core.so \
@@ -1149,7 +1069,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libqdp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdp.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libqdpr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdpr.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libqdutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdutils.so \
-    vendor/xiaomi/topaz/proprietary/vendor/lib64/libqesdk2_0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqesdk2_0.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libqfp-service.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqfp-service.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libqisl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqisl.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libqmi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi.so \
@@ -1166,19 +1085,14 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libqrtr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqrtr.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libqseed3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqseed3.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libqsocket.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqsocket.so \
-    vendor/xiaomi/topaz/proprietary/vendor/lib64/libqti-iopd-client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-iopd-client.so \
-    vendor/xiaomi/topaz/proprietary/vendor/lib64/libqti-iopd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-iopd.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libqti-perfd-client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-perfd-client.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libqti-perfd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-perfd.so \
-    vendor/xiaomi/topaz/proprietary/vendor/lib64/libqti-qesdk-secure.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-qesdk-secure.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libqti-util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-util.so \
-    vendor/xiaomi/topaz/proprietary/vendor/lib64/libqti-utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-utils.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libqtigefar.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqtigefar.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libqtikeymaster4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqtikeymaster4.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libqtikeymint.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqtikeymint.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/librcc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librcc.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libreference-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libreference-ril.so \
-    vendor/xiaomi/topaz/proprietary/vendor/lib64/libreffeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libreffeature.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libril-db.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-db.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libril-legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-legacy.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libril-qc-ltedirectdisc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-qc-ltedirectdisc.so \
@@ -1194,14 +1108,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libsdmextension.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdmextension.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libsdmutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdmutils.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libsdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdsprpc.so \
-    vendor/xiaomi/topaz/proprietary/vendor/lib64/libsecureui.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecureui.so \
-    vendor/xiaomi/topaz/proprietary/vendor/lib64/libsecureui_svcsock.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecureui_svcsock.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libsensorcal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorcal.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libsensorslog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorslog.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libshsc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libshsc.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libsi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsi.so \
-    vendor/xiaomi/topaz/proprietary/vendor/lib64/libsilkyscrolls.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsilkyscrolls.so \
-    vendor/xiaomi/topaz/proprietary/vendor/lib64/libskewknob.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libskewknob.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libsndcardparser.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsndcardparser.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libsnpe_dsp_domains_v2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnpe_dsp_domains_v2.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/libsns_device_mode_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_device_mode_stub.so \
@@ -1304,8 +1214,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/vendor.qti.gnss-V4-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss-V4-ndk.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/vendor.qti.gnss-service.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss-service.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/vendor.qti.hardware.AGMIPC@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.AGMIPC@1.0.so \
-    vendor/xiaomi/topaz/proprietary/vendor/lib64/vendor.qti.hardware.ListenSoundModel@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.ListenSoundModel@1.0-impl.so \
-    vendor/xiaomi/topaz/proprietary/vendor/lib64/vendor.qti.hardware.ListenSoundModel@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.ListenSoundModel@1.0.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/vendor.qti.hardware.alarm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.alarm@1.0.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so \
@@ -1339,11 +1247,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/vendor.qti.hardware.embmssl@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.embmssl@1.1.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.fingerprint@1.0.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/vendor.qti.hardware.fm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.fm@1.0.so \
-    vendor/xiaomi/topaz/proprietary/vendor/lib64/vendor.qti.hardware.iop@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.iop@1.0.so \
-    vendor/xiaomi/topaz/proprietary/vendor/lib64/vendor.qti.hardware.iop@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.iop@2.0.so \
-    vendor/xiaomi/topaz/proprietary/vendor/lib64/vendor.qti.hardware.limits@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.limits@1.0.so \
-    vendor/xiaomi/topaz/proprietary/vendor/lib64/vendor.qti.hardware.limits@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.limits@1.1.so \
-    vendor/xiaomi/topaz/proprietary/vendor/lib64/vendor.qti.hardware.limits@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.limits@1.2.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/vendor.qti.hardware.mwqemadapter@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.mwqemadapter@1.0.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/vendor.qti.hardware.pal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.pal@1.0.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qccsyshal@1.0.so \
@@ -1395,8 +1298,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/vendor.qti.hardware.slmadapter@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.slmadapter@1.0.so \
-    vendor/xiaomi/topaz/proprietary/vendor/lib64/vendor.qti.hardware.soter@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.soter@1.0.so \
-    vendor/xiaomi/topaz/proprietary/vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.tui_comm@1.0.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/vendor.qti.hardware.vpp@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.vpp@1.1.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/vendor.qti.hardware.vpp@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.vpp@1.2.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/vendor.qti.ims.callcapability@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.ims.callcapability@1.0.so \
@@ -1427,13 +1328,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/vendor.qti.latency@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.latency@2.2.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/vendor.qti.memory.pasrmanager@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.memory.pasrmanager@1.0.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/vendor.qti.memory.pasrmanager@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.memory.pasrmanager@1.1.so \
-    vendor/xiaomi/topaz/proprietary/vendor/lib64/vendor.qti.power.pasrmanager@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.power.pasrmanager@1.0.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/vendor.qti.qspmhal@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.qspmhal@1.0-impl.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/vendor.qti.qspmhal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.qspmhal@1.0.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/vendor.qti.voiceprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.voiceprint@1.0.so \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so \
-    vendor/xiaomi/topaz/proprietary/vendor/lib64/vendor.xiaomi.hardware.fingerprintextension@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.fingerprintextension@1.0.so \
-    vendor/xiaomi/topaz/proprietary/vendor/lib64/vendor.xiaomi.hardware.micharge@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.micharge@1.0.so
+    vendor/xiaomi/topaz/proprietary/vendor/lib64/vendor.xiaomi.hardware.fingerprintextension@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.fingerprintextension@1.0.so
 
 PRODUCT_PACKAGES += \
     libagm \
@@ -1450,8 +1349,9 @@ PRODUCT_PACKAGES += \
     IWlanService \
     TimeService \
     uimgbaservice \
-    HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND \
     HotwordEnrollmentXGoogleHEXAGON_WIDEBAND \
+    HotwordEnrollmentYGoogleHEXAGON_WIDEBAND \
+    AtFwd2 \
     DeviceInfo \
     ImsRcsService \
     PowerOffAlarm \
@@ -1473,40 +1373,38 @@ PRODUCT_PACKAGES += \
     com.qti.dpmframework \
     dpmapi \
     qcrilhook \
+    qti-telephony-common \
     vendor.qti.hardware.alarm-V1.0-java \
+    vendor.qti.ims.callcapability-V1.0-java \
+    vendor.qti.ims.callcapabilityaidlservice-V1-java \
+    vendor.qti.ims.configaidlservice-V1-java \
+    vendor.qti.ims.configservice-V1.0-java \
     vendor.qti.ims.connection-V1.0-java \
+    vendor.qti.ims.connectionaidlservice-V1-java \
     vendor.qti.ims.factory-V2.0-java \
     vendor.qti.ims.factory-V2.1-java \
     vendor.qti.ims.factory-V2.2-java \
+    vendor.qti.ims.factoryaidlservice-V1-java \
     vendor.qti.ims.rcssip-V1.0-java \
     vendor.qti.ims.rcssip-V1.1-java \
     vendor.qti.ims.rcssip-V1.2-java \
+    vendor.qti.ims.rcssipaidlservice-V1-java \
     vendor.qti.ims.rcsuce-V1.0-java \
     vendor.qti.ims.rcsuce-V1.1-java \
     vendor.qti.ims.rcsuce-V1.2-java \
-    android.hardware.biometrics.fingerprint@2.1-service \
-    android.hardware.gnss-aidl-service-qti \
-    android.hardware.ir-service.example \
-    android.hardware.radio.config \
-    android.hardware.security.keymint-service-qti \
-    android.hardware.usb@1.2-service \
-    c2_manifest_vendor \
-    c2_manifest_vendor_audio \
-    deviceinfo-saidl \
-    manifest_android.hardware.drm-service.widevine \
-    manifest_non_qmaa \
-    manifest_non_qmaa_extn \
-    qms-saidl \
-    vendor.qti.diag.hal.service \
-    vendor.qti.gnss-service \
-    vendor.qti.hardware.lights.service \
-    vendor.qti.hardware.limits-service \
-    vendor.qti.hardware.perf \
-    vendor.qti.hardware.radio.qtiradioconfig \
-    vendor.qti.hardware.servicetracker@1.2-service \
-    vendor.qti.memory.pasrmanager@1.0-service \
-    vendor.xiaomi.hardware.micharge@1.0 \
-    manifest_vendor.xiaomi.hardware.mlipay
+    android.hardware.biometrics.fingerprint@2.1-service.xml \
+    android.hardware.gnss-aidl-service-qti.xml \
+    android.hardware.radio.config.xml \
+    android.hardware.security.keymint-service-qti.xml \
+    android.hardware.usb@1.2-service.xml \
+    c2_manifest_vendor.xml \
+    c2_manifest_vendor_audio.xml \
+    deviceinfo-saidl.xml \
+    manifest_android.hardware.drm-service.widevine.xml \
+    qms-saidl.xml \
+    vendor.qti.diag.hal.service.xml \
+    vendor.qti.gnss-service.xml \
+    vendor.qti.hardware.radio.qtiradioconfig.xml
 
 PRODUCT_PACKAGES += \
     libimscamera_jni_libimscamera_jni_symlink64 \
