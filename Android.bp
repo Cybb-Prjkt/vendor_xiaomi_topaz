@@ -172,6 +172,9 @@ android_app_import {
 	owner: "xiaomi",
 	apk: "proprietary/vendor/app/CACertService/CACertService.apk",
 	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
 	soc_specific: true,
 }
 
@@ -181,6 +184,9 @@ android_app_import {
 	apk: "proprietary/vendor/app/CneApp/CneApp.apk",
 	required: ["CneApp.libvndfwk_detect_jni.qti_vendor_symlink"],
 	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
 	soc_specific: true,
 }
 
@@ -189,6 +195,9 @@ android_app_import {
 	owner: "xiaomi",
 	apk: "proprietary/vendor/app/IWlanService/IWlanService.apk",
 	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
 	soc_specific: true,
 }
 
@@ -197,6 +206,9 @@ android_app_import {
 	owner: "xiaomi",
 	apk: "proprietary/vendor/app/TimeService/TimeService.apk",
 	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
 	soc_specific: true,
 }
 
@@ -205,6 +217,9 @@ android_app_import {
 	owner: "xiaomi",
 	apk: "proprietary/product/app/uimgbaservice/uimgbaservice.apk",
 	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
 	product_specific: true,
 }
 
@@ -213,6 +228,9 @@ android_app_import {
 	owner: "xiaomi",
 	apk: "proprietary/product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk",
 	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
 	privileged: true,
 	product_specific: true,
 }
@@ -222,6 +240,9 @@ android_app_import {
 	owner: "xiaomi",
 	apk: "proprietary/product/priv-app/HotwordEnrollmentYGoogleHEXAGON_WIDEBAND/HotwordEnrollmentYGoogleHEXAGON_WIDEBAND.apk",
 	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
 	privileged: true,
 	product_specific: true,
 }
@@ -231,6 +252,9 @@ android_app_import {
 	owner: "xiaomi",
 	apk: "proprietary/system_ext/app/AtFwd2/AtFwd2.apk",
 	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
 	system_ext_specific: true,
 }
 
@@ -239,6 +263,9 @@ android_app_import {
 	owner: "xiaomi",
 	apk: "proprietary/system_ext/app/DeviceInfo/DeviceInfo.apk",
 	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
 	system_ext_specific: true,
 }
 
@@ -247,6 +274,9 @@ android_app_import {
 	owner: "xiaomi",
 	apk: "proprietary/system_ext/app/ImsRcsService/ImsRcsService.apk",
 	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
 	system_ext_specific: true,
 }
 
@@ -255,6 +285,9 @@ android_app_import {
 	owner: "xiaomi",
 	apk: "proprietary/system_ext/app/PowerOffAlarm/PowerOffAlarm.apk",
 	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
 	system_ext_specific: true,
 }
 
@@ -263,6 +296,9 @@ android_app_import {
 	owner: "xiaomi",
 	apk: "proprietary/system_ext/app/QCC/QCC.apk",
 	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
 	system_ext_specific: true,
 }
 
@@ -271,6 +307,9 @@ android_app_import {
 	owner: "xiaomi",
 	apk: "proprietary/system_ext/app/QtiTelephony/QtiTelephony.apk",
 	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
 	system_ext_specific: true,
 }
 
@@ -279,6 +318,9 @@ android_app_import {
 	owner: "xiaomi",
 	apk: "proprietary/system_ext/app/QtiTelephonyService/QtiTelephonyService.apk",
 	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
 	system_ext_specific: true,
 }
 
@@ -287,6 +329,9 @@ android_app_import {
 	owner: "xiaomi",
 	apk: "proprietary/system_ext/app/atfwd/atfwd.apk",
 	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
 	system_ext_specific: true,
 }
 
@@ -295,6 +340,9 @@ android_app_import {
 	owner: "xiaomi",
 	apk: "proprietary/system_ext/app/uceShimService/uceShimService.apk",
 	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
 	system_ext_specific: true,
 }
 
@@ -303,6 +351,9 @@ android_app_import {
 	owner: "xiaomi",
 	apk: "proprietary/system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk",
 	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
 	privileged: true,
 	system_ext_specific: true,
 }
@@ -312,6 +363,9 @@ android_app_import {
 	owner: "xiaomi",
 	apk: "proprietary/system_ext/priv-app/ims/ims.apk",
 	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
 	privileged: true,
 	system_ext_specific: true,
 }
@@ -321,6 +375,9 @@ android_app_import {
 	owner: "xiaomi",
 	apk: "proprietary/system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
 	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
 	privileged: true,
 	system_ext_specific: true,
 }
